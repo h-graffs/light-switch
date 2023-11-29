@@ -1,0 +1,25 @@
+#page_container {
+  display: flex;
+  margin: auto auto;  
+}
+
+#switch_div {
+  display: flex;
+  background-color: green;
+  margin: auto auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+#switch {
+  border: 4px solid black;
+  border-radius: 5px;
+  height: 140px;
+  width: 80px;
+  transform: skew(5deg);
+  box-shadow: rgba(0, 0, 0, 10) 0px 25px 20px -20px;
+  margin: auto auto;
+}
+
+
