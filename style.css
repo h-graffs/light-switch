@@ -1,0 +1,142 @@
+#page_container {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto; 
+  background-color: #003;
+}
+
+#switch_div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  margin: auto auto;
+  margin-top: 100px;
+  width: 300px;
+  height: 300px;
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.checkbox {
+  position: absolute;
+  border: 4px solid black;
+  border-radius: 5px;
+  height: 7rem;
+  width: 5rem;
+  transform: skew(5deg);
+  margin: 30% auto;
+  cursor: pointer;
+  background-color: white;
+  z-index: 2;
+  opacity: 0%;
+}
+
+.switch {
+  position: absolute;
+  border: 4px solid white;
+  border-radius: 5px;
+  height: 7rem;
+  width: 5rem;
+  transform: skew(5deg);
+  box-shadow: rgba(0, 0, 0, 10) 0px 25px 20px -20px;
+  margin: 30% auto;
+  background-color: black;
+  z-index: 1;
+}
+
+#light_bulb {
+  display: flex;
+  flex-direction: column;
+  margin: auto auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.bulb_top {
+  width: 150px;
+  height: 150px;
+  border: solid 5px #000;
+  border-radius: 50%;
+  border-color: #000 #000 transparent #000;
+  margin: 30px auto;
+  background-color: none;
+}
+
+#bulb_sidelines {
+  display: flex;
+  flex direction: inline;
+  margin-top: -43px;
+}
+
+.sidelines_div_width {
+  width: 50%;
+}
+
+.sidelines_styling {
+  width: 5px;
+  height: 30px;
+  background-color: black;
+}
+
+#left_sideline {
+  position: relative;
+  left: 105px;
+}
+
+#right_sideline {
+  margin: 0px 42px;
+}
+
+#bulb_bottom_line1 {
+  width: 70px;
+  background-color: black;
+  height: 5px;
+  margin: 10px auto;
+}
+
+#bulb_bottom_line2 {
+  width: 60px;
+  background-color: black;
+  height: 5px;
+  margin: 10px auto;
+}
+
+#bulb_bottom_line3 {
+  width: 50px;
+  background-color: black;
+  height: 5px;
+  margin: 10px auto;
+}
+
+body:has(input[type='checkbox']:checked) .bulb_top {
+  border-color: #00FF00 #00FF00 transparent #00FF00;
+}
+
+body:has(input[type='checkbox']:checked) .sidelines_styling {
+  background-color: #00FF00;
+}
+
+body:has(input[type='checkbox']:checked) #bulb_bottom_line1 {
+  background-color: #00FF00;
+}
+
+body:has(input[type='checkbox']:checked) #bulb_bottom_line2 {
+  background-color: #00FF00;
+}
+
+body:has(input[type='checkbox']:checked) #bulb_bottom_line3 {
+  background-color: #00FF00;
+}
+
+body:has(input[type='checkbox']:checked) .switch {
+  transform: skew(-10deg);
+  box-shadow: rgba(0, 0, 0, 10) 5px -25px 20px -20px;
+  border: 5px solid #00FF00;
+}
+
+body:has(input[type='checkbox']:checked) #switch_div {
+  border: 5px solid #00FF00;
+}
+
